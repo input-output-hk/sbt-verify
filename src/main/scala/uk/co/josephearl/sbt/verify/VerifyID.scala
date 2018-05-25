@@ -14,7 +14,7 @@ import java.nio.file.Paths
 import uk.co.josephearl.sbt.verify.HashAlgorithm.HashAlgorithm
 import sbt.Logger
 
-final case class VerifyID(organization: String, name: String, hash: String, algorithm: HashAlgorithm = HashAlgorithm.SHA1) {
+final case class VerifyID(organization: String, name: String, hash: String, algorithm: HashAlgorithm) {
   def algorithm(algorithm: String): VerifyID = this.copy(algorithm = HashAlgorithm.withName(algorithm))
 
   def algorithm(algorithm: HashAlgorithm): VerifyID = this.copy(algorithm = algorithm)

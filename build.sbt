@@ -4,7 +4,7 @@ name := "sbt-verify"
 
 organization := "uk.co.josephearl"
 
-version := "0.3.0"
+version := "0.5.1"
 
 scalaVersion := "2.12.5"
 

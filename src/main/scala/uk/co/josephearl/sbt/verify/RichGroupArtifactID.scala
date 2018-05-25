@@ -19,6 +19,8 @@ final case class RichGroupArtifactID private[sbt](organization: String, name: St
 
   def md5(hash: String): VerifyID = toVerifyID(hash, HashAlgorithm.MD5)
 
+  def sha256(hash: String): VerifyID = toVerifyID(hash, HashAlgorithm.SHA256)
+
   private def toVerifyID(hash: String, hashAlgorithm: HashAlgorithm): VerifyID =
     VerifyID(organization, name, hash, hashAlgorithm)
 }

@@ -36,6 +36,7 @@ object HashAlgorithm extends Enumeration {
 
   type HashAlgorithm = Val
 
+  val SHA256 = Val("sha-256")
   val SHA1 = Val("sha1")
   val MD5 = Val("md5")
 }
